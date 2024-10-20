@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: -1;
+}
+
+.background div {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px); /* Adjust the blur for better visibility */
+  opacity: 0.6;
+}
+
+.background div:nth-child(1) {
+  background: linear-gradient(132deg, #ffd500 0%, #ffa200 100%);
+  width: 0vw;
+  height: 0vw;
+  left: 20%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.background div:nth-child(2) {
+  background: linear-gradient(132deg, #0800ff 0%, #e32be3 100%);
+  width: 60vw;
+  height: 60vw;
+  left: 90%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.background div:nth-child(3) {
+  background: linear-gradient(132deg, #ff0000 0%, #e9591c 100%);
+  width: 60vw;
+  height: 60vw;
+  left: 20%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top img {
+  width: 80px;
+}
+.top p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffc400;
+  font-weight: bolder;
+}
+.middle {
+  width: 100%;
+  flex: 1;
+  margin-top: 80px;
+  gap: 0;
+  line-height: 5rem;
+}
+.middle h2 {
+  font-weight: 800;
+  margin: 0;
+  font-size: 4.5rem;
+  color: white;
+}
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bottom input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input:focus {
+  border-color: #ffc400;
+}
+.bottom .button {
+  width: 100%;
+  flex: 1;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffc400;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10;
+}
+
+button:hover {
+  background-color: #ffc400;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: grey;
+}
+p a {
+  color: #ffc400;
+  text-decoration: none;
+}
+.login-container a {
+  color: #ffc400;
+  width: 100%;
+  text-align: right;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}

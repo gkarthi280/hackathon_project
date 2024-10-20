@@ -1,0 +1,24 @@
+.bottom-tab {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1e1e1e;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-tab a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.bottom-tab a.active {
+  color: #f9a825;
+  border-bottom: 2px solid #f9a825;
+}

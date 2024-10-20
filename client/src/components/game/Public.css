@@ -1,0 +1,125 @@
+/* Main container for vertical scrolling */
+.public-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding-bottom: 290px;
+}
+
+.public-container::-webkit-scrollbar {
+  display: none;
+}
+
+.public-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Styling for individual game cards */
+.public-game-card {
+  background: linear-gradient(
+    145deg,
+    rgba(39, 38, 38, 0.526),
+    rgba(20, 20, 20, 0.377)
+  );
+  padding: 25px;
+  border-radius: 15px;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 100%;
+}
+
+.public-game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.public-active {
+  border: 2px solid #3cbc4953; /* Distinct green color for active game */
+  background: linear-gradient(145deg, #3cbc4977, #137a1d7c);
+  color: #1e1e1e;
+}
+
+.public-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.public-gameID {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fbc443;
+  margin-bottom: 5px;
+}
+
+.public-globalText {
+  font-size: 18px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.public-pushups,
+.public-status {
+  color: #d4d4d4;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.public-timeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.public-startText {
+  color: #bbbbbb;
+  font-size: 15px;
+}
+
+.public-poolAmount {
+  color: #5ed8a7;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.public-minBetText {
+  font-size: 14px;
+  color: #ffffffb3;
+}
+
+/* Timer Styling for Active Game */
+.public-timer {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #3cbc48;
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Timer Styling for Upcoming Games */
+.public-upcoming-timer {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffcc00; /* Distinct yellow border for upcoming games */
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}

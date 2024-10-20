@@ -1,0 +1,105 @@
+.bridge-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  color: white;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.content {
+  width: 100%;
+  max-width: 500px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.connect-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.network-picker,
+.amount-input {
+  margin-bottom: 15px;
+}
+
+.select,
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  border: none;
+  color: white;
+}
+
+.bridge-button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.bridge-button:hover {
+  background-color: #218838;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.switch-network-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bridge-container label {
+  margin-bottom: 10px;
+}
+.switch-network-button:hover {
+  background-color: #0056b3;
+}
+
+.account-info {
+  margin-top: 20px;
+  text-align: center;
+}
+.bridge-container .nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.nav .close-button p {
+  color: green;
+}

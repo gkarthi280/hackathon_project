@@ -1,0 +1,51 @@
+{
+  "Eth Sepolia": {
+    "chainHexId": "0xaa36a7",
+    "usdcTokenMessengerCA": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
+    "usdcTokenCA": "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
+    "usdcMessageTransmitterCA": "0x7865fAfC2db2093669d92c0F33AeEF291086BEFD",
+    "destinationDomain": 0,
+    "gameCA": "0x79758b86E352D17DC4F1fF9638d1Bd43d7A49AbB"
+  },
+  "Avax Fuji": {
+    "chainHexId": "0xa869",
+    "usdcTokenMessengerCA": "0xeb08f243e5d3fcff26a9e38ae5520a669f4019d0",
+    "usdcTokenCA": "0x5425890298aed601595a70ab815c96711a31bc65",
+    "usdcMessageTransmitterCA": "0xa9fb1b3009dcb79  e2fe346c16a604b8fa8ae0a79",
+    "destinationDomain": 1,
+    "gameCA": ""
+  },
+  "Base Sepolia": {
+    "chainHexId": "0x14a34",
+    "usdcTokenMessengerCA": "0x9f3B8679c73C2Fef8b59B4f3444d4e156fb70AA5",
+    "usdcTokenCA": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "usdcMessageTransmitterCA": "0x7865fAfC2db2093669d92c0F33AeEF291086BEFD",
+    "destinationDomain": 6,
+    "gameCA": ""
+  },
+  "Skale Nebula": {
+    "chainHexId": "0x235ddd0",
+    "usdcTokenCA": "0x5eaf4e5a908ba87abf3de768cb0da517db45db48",
+    "gameCA": "0xbB7841D3c97a28A5dd21497aA649320b7A510C46"
+  },
+  "Polygon Amoy": {
+    "chainHexId": "0x13882",
+    "usdcTokenCA": "0x41e94eb019c0762f9bfcf9fb1e58725bfb0e7582",
+    "gameCA": "0xbB7841D3c97a28A5dd21497aA649320b7A510C46"
+  },
+  "Rootstock Testnet": {
+    "chainHexId": "0x1f",
+    "usdcTokenCA": "",
+    "gameCA": ""
+  },
+  "Unichain": {
+    "chainHexId": "0x515",
+    "usdcTokenCA": "0x31d0220469e10c4E71834a79b1f276d740d3768F",
+    "gameCA": ""
+  },
+  "Flow Testnet": {
+    "chainHexId": "0x221",
+    "usdcTokenCA": "0x9Cdf8172b0af180311BD85e341a1f347AaE26378",
+    "gameCA": "0x79758b86E352D17DC4F1fF9638d1Bd43d7A49AbB"
+  }
+}

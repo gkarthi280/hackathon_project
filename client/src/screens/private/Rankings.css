@@ -1,0 +1,192 @@
+/* Main container and titles */
+.rankings-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: transparent;
+}
+
+.rankings-title {
+  font-size: 32px;
+  color: #ffd700;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.rankings-subtitle {
+  font-size: 24px;
+  color: #e0e0e0;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* Top Players Section with horizontal scroll */
+.top-players-section {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+  overflow-x: auto; /* Horizontal scroll */
+  scrollbar-width: none; /* Firefox */
+}
+
+.top-players-section::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.top-player-card {
+  background: #333;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  min-width: 250px; /* Fixed width to create horizontal scroll */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rank-badge {
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto 10px;
+}
+
+.player-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px 0;
+  border: 2px solid #ffd700;
+  object-fit: cover;
+}
+
+.player-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.player-score {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+/* Additional Stats Section with vertical scroll */
+.additional-stats-section {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for vertical scrolling */
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 60vh;
+  padding-bottom: 280px;
+  overflow-y: auto; /* Vertical scroll */
+}
+
+.additional-stats-section::-webkit-scrollbar {
+  display: none; /* Hide vertical scrollbar */
+}
+
+.stat-card {
+  background-color: #444;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.stat-info {
+  color: #ffffff;
+}
+
+.stat-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.stat-player {
+  font-size: 14px;
+  color: #ffd700;
+}
+
+.stat-value {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px 0;
+  border: 2px solid #ffd700;
+}
+
+.modal-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-detail {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 5px 0;
+}

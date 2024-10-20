@@ -1,0 +1,1 @@
+const e={connecting:"スマートアカウントに接続中",failedToConnect:"スマートアカウントへの接続に失敗しました",wrongNetworkScreen:{title:"ネットワークが違います",subtitle:"ウォレットが必要なネットワークに接続されていません",failedToSwitch:"ネットワークの切り替えに失敗しました"}};export{e as default};

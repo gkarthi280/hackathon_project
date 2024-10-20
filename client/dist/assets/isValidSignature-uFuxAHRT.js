@@ -1,0 +1,1 @@
+import{r as a}from"./index-CYUBhEOJ.js";const e="0x1626ba7e",r=[{type:"bytes32",name:"hash"},{type:"bytes",name:"signature"}],n=[{type:"bytes4"}];async function c(t){return a({contract:t.contract,method:[e,r,n],params:[t.hash,t.signature]})}export{c as i};

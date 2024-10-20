@@ -1,0 +1,1 @@
+async function o(a){const{account:n,chainId:t,params:[s]}=a;if(!n.sendRawTransaction)throw new Error("The current account does not support sending raw transactions");return(await n.sendRawTransaction({rawTransaction:s,chainId:t})).transactionHash}export{o as handleSendRawTransactionRequest};

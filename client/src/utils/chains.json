@@ -47,5 +47,15 @@
     "chainHexId": "0x221",
     "usdcTokenCA": "0x9Cdf8172b0af180311BD85e341a1f347AaE26378",
     "gameCA": "0x79758b86E352D17DC4F1fF9638d1Bd43d7A49AbB"
+  },
+  "Fhenix Testnet": {
+    "chainHexId": "0x8008135",
+    "usdcTokenCA": "0x9cdf8172b0af280311BD85e341a1f547AaE26378",
+    "gameCA": "0x79758b86E352D18DC4F1fF9438d1Bd43d7A49abB"
+  },
+  "Morph Holesky Testnet": {
+    "chainHexId": "0xafa",
+    "usdcTokenCA": "0x9cdf8172b0af280311BD85e341a1f547AaE26378",
+    "gameCA": "0x79758b86E352D18DC4F1fF9438d1Bd43d7A49abB"
   }
 }

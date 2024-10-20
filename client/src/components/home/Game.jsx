@@ -10,6 +10,7 @@ import {
 import Logo from "../../assets/logo.png";
 import { joinGameContract } from "../../utils/SmartContract";
 import ChainInfo from "../../utils/chains.json";
+import { detectCurrentNetwork } from "../../utils/DetectCurrentNetwork";
 
 const Game = () => {
   const { user } = useContext(AuthContext);
@@ -66,9 +67,10 @@ const Game = () => {
       showNotification("Please enter a valid stake amount.");
       return;
     }
+    const currentNetwork = await detectCurrentNetwork();
     await joinGameContract(
-      ChainInfo["Skale Nebula"].gameCA,
-      ChainInfo["Skale Nebula"].usdcTokenCA,
+      ChainInfo[currentNetwork].gameCA,
+      ChainInfo[currentNetwork].usdcTokenCA,
       stake
     );
 

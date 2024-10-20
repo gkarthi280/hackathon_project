@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios"; // Import axios
 import { getWinners, payoutWinners, returnBets } from "../utils/SmartContract";
 import ChainInfo from "../utils/chains.json";
+import { detectCurrentNetwork } from "../../utils/DetectCurrentNetwork";
 
 const AdminPage = () => {
   const [message, setMessage] = useState("");
@@ -43,10 +44,11 @@ const AdminPage = () => {
 
       setLatestGame(gameData); // Update the state for UI purposes
       setMessage("Latest past game data fetched successfully.");
+      const currentNetwork = await detectCurrentNetwork();
 
       try {
         console.log("Attempting to return bets");
-        await returnBets(ChainInfo["Skale Nebula"].gameCA, gameData.winner);
+        await returnBets(ChainInfo[currentNetwork].gameCA, gameData.winner);
       } catch (error) {
         console.error("Failed to return bets: ", error);
       }
@@ -54,12 +56,12 @@ const AdminPage = () => {
       try {
         console.log("Attempting to fetch winners");
         const luckyWinners = await getWinners(
-          ChainInfo["Skale Nebula"].gameCA,
+          ChainInfo[currentNetwork].gameCA,
           gameData.winner
         );
         console.log("Attempting to payout winners");
 
-        await payoutWinners(ChainInfo["Skale Nebula"].gameCA, luckyWinners);
+        await payoutWinners(ChainInfo[currentNetwork].gameCA, luckyWinners);
       } catch (error) {
         console.error("Failed to prize winners: ", error);
       }
